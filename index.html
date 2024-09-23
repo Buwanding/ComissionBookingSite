@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Travel Website</title>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-white py-4 px-8 shadow">
+      <div class="text-lg font-bold text-yellow-500">TravelSite</div>
+      <div class="space-x-4">
+        <a href="#" class="text-sm text-gray-600 hover:text-gray-900"
+          >Support</a
+        >
+        <a href="#" class="text-sm text-gray-600 hover:text-gray-900">Trips</a>
+        <a href="#" class="text-sm text-gray-600 hover:text-gray-900"
+          >Sign In</a
+        >
+      </div>
+    </nav>
+
+    <!-- Search Form -->
+    <section class="bg-gray-50 py-8">
+      <div class="container mx-auto">
+        <div class="bg-white p-6 shadow rounded-lg">
+          <div class="grid grid-cols-4 gap-4">
+            <input
+              type="text"
+              placeholder="Where to?"
+              class="border rounded-md p-3 w-full"
+            />
+            <input
+              type="date"
+              placeholder="Dates"
+              class="border rounded-md p-3 w-full"
+            />
+            <input
+              type="number"
+              placeholder="Travelers"
+              class="border rounded-md p-3 w-full"
+            />
+            <button class="bg-blue-500 text-white p-3 rounded-md w-full">
+              Search
+            </button>
+          </div>
+          <div class="mt-4 flex space-x-2">
+            <label><input type="checkbox" class="mr-1" /> Add a flight</label>
+            <label><input type="checkbox" class="mr-1" /> Add a car</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="bg-blue-600 py-4">
+      <div class="container mx-auto text-center text-white">
+        <p>
+          Members save 10% or more on over 100,000 hotels worldwide when signed
+          in
+        </p>
+        <button class="bg-white text-blue-600 px-4 py-2 rounded-full">
+          Sign in now
+        </button>
+      </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section class="py-8">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">
+          Discover your new favorite stay
+        </h2>
+        <div class="grid grid-cols-5 gap-4">
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="villa.jpg"
+              alt="Villa"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Villa</h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="apartment.jpg"
+              alt="Apartment"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Apartment</h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="condo.jpg"
+              alt="Condo"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Condo</h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="resort.jpg"
+              alt="Resort"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Resort</h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="apart-hotel.jpg"
+              alt="Apart Hotel"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Apart Hotel</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Destinations Section -->
+    <section class="py-8 bg-gray-50">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">
+          Explore stays in trending destinations
+        </h2>
+        <div class="grid grid-cols-4 gap-4">
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="destination1.jpg"
+              alt="Destination 1"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Mandaluyong, Philippines</h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="destination2.jpg"
+              alt="Destination 2"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Dumaguete, Philippines</h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="destination3.jpg"
+              alt="Destination 3"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Malita, Philippines</h3>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow">
+            <img
+              src="destination4.jpg"
+              alt="Destination 4"
+              class="w-full h-40 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Brisbane, Australia</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Last-minute Weekend Deals -->
+    <section
+      class="py-8 bg-gradient-to-r from-green-700 to-blue-900 text-white"
+    >
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Last-minute weekend deals</h2>
+        <p class="text-sm mb-4">Showing deals for: Sep 27 - Sep 29</p>
+        <div class="grid grid-cols-5 gap-4">
+          <!-- Deal Card 1 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="hotel1.jpg"
+              alt="Lanson Place"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Lanson Place Mall of Asia</h3>
+              <p class="text-green-600">Exceptional (525 reviews)</p>
+              <p class="font-bold text-xl">₱6,266</p>
+              <p class="text-xs line-through">₱8,000</p>
+              <p class="text-sm text-green-600">25% off</p>
+            </div>
+          </div>
+
+          <!-- Deal Card 2 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="hotel2.jpg"
+              alt="City Garden"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">City Garden GRAND Hotel</h3>
+              <p class="text-green-600">Wonderful (3000 reviews)</p>
+              <p class="font-bold text-xl">₱3,384</p>
+              <p class="text-xs line-through">₱4,200</p>
+              <p class="text-sm text-green-600">47% off</p>
+            </div>
+          </div>
+
+          <!-- Deal Card 3 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="hotel3.jpg"
+              alt="Hotel Villa Fontaine"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Hotel Villa Fontaine</h3>
+              <p class="text-green-600">Exceptional (999 reviews)</p>
+              <p class="font-bold text-xl">₱18,485</p>
+              <p class="text-xs line-through">₱23,000</p>
+              <p class="text-sm text-green-600">20% off</p>
+            </div>
+          </div>
+
+          <!-- Deal Card 4 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="hotel4.jpg"
+              alt="Carlton City"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Carlton City Hotel</h3>
+              <p class="text-green-600">Wonderful (2007 reviews)</p>
+              <p class="font-bold text-xl">₱11,729</p>
+              <p class="text-xs line-through">₱14,000</p>
+              <p class="text-sm text-yellow-500">Member Price Available</p>
+            </div>
+          </div>
+
+          <!-- Deal Card 5 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="hotel5.jpg"
+              alt="Tokyo Disney Resort"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Tokyo Disney Resort</h3>
+              <p class="text-green-600">Exceptional (1234 reviews)</p>
+              <p class="font-bold text-xl">₱5,788</p>
+              <p class="text-xs line-through">₱7,200</p>
+              <p class="text-sm text-green-600">15% off</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-right">
+          <button class="bg-white text-green-600 px-4 py-2 rounded-full">
+            See all deals
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Unique Stays -->
+    <section class="py-8 bg-gray-50">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Explore these unique stays</h2>
+        <p class="text-sm mb-4">Showing deals for: Oct 18 - Oct 20</p>
+        <div class="grid grid-cols-5 gap-4">
+          <!-- Unique Stay Card 1 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="stay1.jpg"
+              alt="Arabella"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Arabella Hot Spring Resort</h3>
+              <p class="text-green-600">Exceptional (9 reviews)</p>
+              <p class="font-bold text-xl">₱29,464</p>
+              <p class="text-xs">Includes taxes & fees</p>
+            </div>
+          </div>
+
+          <!-- Unique Stay Card 2 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="stay2.jpg"
+              alt="Quest Villa"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Quest Villa</h3>
+              <p class="text-green-600">Wonderful (101 reviews)</p>
+              <p class="font-bold text-xl">₱2,320</p>
+              <p class="text-xs line-through">₱2,822</p>
+              <p class="text-sm text-yellow-500">Member Price Available</p>
+            </div>
+          </div>
+
+          <!-- Unique Stay Card 3 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="stay3.jpg"
+              alt="Villas at Caza del Mar"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Villas at Caza del Mar</h3>
+              <p class="text-green-600">Very Good (87 reviews)</p>
+              <p class="font-bold text-xl">₱10,908</p>
+              <p class="text-xs line-through">₱12,000</p>
+              <p class="text-sm text-green-600">11% off</p>
+            </div>
+          </div>
+
+          <!-- Unique Stay Card 4 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="stay4.jpg"
+              alt="Villa Presito"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Villa Presito</h3>
+              <p class="text-green-600">Wonderful (67 reviews)</p>
+              <p class="font-bold text-xl">₱19,375</p>
+              <p class="text-xs line-through">₱21,000</p>
+              <p class="text-sm text-yellow-500">Member Price Available</p>
+            </div>
+          </div>
+
+          <!-- Unique Stay Card 5 -->
+          <div class="bg-white text-gray-900 rounded-lg shadow">
+            <img
+              src="stay5.jpg"
+              alt="Forest Villa"
+              class="w-full h-32 object-cover rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Forest Villa El Nido</h3>
+              <p class="text-green-600">Exceptional (120 reviews)</p>
+              <p class="font-bold text-xl">₱14,688</p>
+              <p class="text-xs line-through">₱18,000</p>
+              <p class="text-sm text-green-600">18% off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-100 py-8">
+      <div class="container mx-auto">
+        <!-- Explore a world of travel section -->
+        <div class="mb-8">
+          <h3 class="text-blue-600 font-semibold">
+            Explore a world of travel with Expedia
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+            <div>
+              <h4 class="font-semibold">Hotels in Tagaytay</h4>
+              <p>Hotels in Boracay</p>
+              <p>Hotels in Bohol</p>
+              <p>Hotels in Puerto Galera</p>
+            </div>
+            <div>
+              <h4 class="font-semibold">Book hotels internationally</h4>
+              <p>Hotels in Singapore</p>
+              <p>Hotels in San Francisco</p>
+              <p>Hotels in Kuala Lumpur</p>
+              <p>Hotels in Beijing</p>
+            </div>
+            <div>
+              <h4 class="font-semibold">&nbsp;</h4>
+              <!-- Blank for alignment -->
+              <p>Hotels in Tokyo</p>
+              <p>Hotels in Hong Kong</p>
+              <p>Hotels in Ho Chi Minh</p>
+              <p>Hotels in Macau</p>
+            </div>
+            <div>
+              <p>Hotels in Los Angeles</p>
+              <p>Hotels in Taipei</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Links and Information -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <!-- Company Column -->
+          <div>
+            <h4 class="font-semibold text-gray-700 mb-4">Company</h4>
+            <ul class="text-sm text-gray-600">
+              <li>About Us</li>
+              <li>Jobs</li>
+              <li>List your property</li>
+              <li>Partnerships</li>
+              <li>Newsroom</li>
+            </ul>
+          </div>
+
+          <!-- Explore Column -->
+          <div>
+            <h4 class="font-semibold text-gray-700 mb-4">Explore</h4>
+            <ul class="text-sm text-gray-600">
+              <li>Philippines travel guide</li>
+              <li>Hotels in Philippines</li>
+              <li>Vacation rentals in Philippines</li>
+              <li>Vacation packages in Philippines</li>
+              <li>Domestic flights</li>
+              <li>Car rentals in Philippines</li>
+              <li>All accommodation types</li>
+            </ul>
+          </div>
+
+          <!-- Policies Column -->
+          <div>
+            <h4 class="font-semibold text-gray-700 mb-4">Policies</h4>
+            <ul class="text-sm text-gray-600">
+              <li>Privacy</li>
+              <li>Cookies</li>
+              <li>Terms of use</li>
+              <li>Vrbo terms and conditions</li>
+              <li>Content guidelines and reporting content</li>
+            </ul>
+          </div>
+
+          <!-- Help Column -->
+          <div>
+            <h4 class="font-semibold text-gray-700 mb-4">Help</h4>
+            <ul class="text-sm text-gray-600">
+              <li>Support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="mt-8 text-center border-t border-gray-300 pt-4">
+          <div class="flex justify-center items-center mb-4">
+            <img src="secured-icon.png" alt="Secure" class="h-8 mr-4" />
+            <span class="text-sm text-gray-500"
+              >© 2024 Expedia, Inc. All rights reserved.</span
+            >
+          </div>
+          <p class="text-xs text-gray-500">
+            Expedia and the Expedia Logo are trademarks or registered trademarks
+            of Expedia, Inc.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
